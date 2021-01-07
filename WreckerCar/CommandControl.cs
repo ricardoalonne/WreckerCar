@@ -524,9 +524,12 @@ namespace WreckerCar
         /*
          ----Cambiar botones por swicht
          MEJORAS
+         Menu de configuración
          Menu adicional: modoOscuro, cerrar, desconectar, apagar, configuracion, acerca de
          Diseño de logo de WreckerCar
          Habilitar comandos por teclado
+         Agregar más sonidos
+         Comandos por voz
          */
     }
 }
