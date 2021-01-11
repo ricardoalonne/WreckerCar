@@ -351,6 +351,8 @@ namespace WreckerCar
 
                 this.Panel_EstadosCamionAuxilio.BackColor = estadosCamion;
 
+                this.Label_Temperatura.BackColor =
+                this.Label_Humedad.BackColor =
                 this.Button_Menu.BackColor =
                 this.Button_Minimizar.BackColor =
                 this.CheckBox_ModoOscuro.BackColor =

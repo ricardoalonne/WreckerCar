@@ -33,27 +33,22 @@ namespace WreckerCar
             this.Panel_EntradaSerial = new System.Windows.Forms.Panel();
             this.Panel_EntradaSerialContenedor = new System.Windows.Forms.Panel();
             this.FlowLayoutPanel_OpcionesEntradaSerial = new System.Windows.Forms.FlowLayoutPanel();
-            this.Button_Limpiar = new System.Windows.Forms.Button();
-            this.Button_Copiar = new System.Windows.Forms.Button();
-            this.Button_GuardarComo = new System.Windows.Forms.Button();
             this.RichTextBox_EntradaSerial = new System.Windows.Forms.RichTextBox();
             this.Button_EntradaSerial = new System.Windows.Forms.Button();
             this.Panel_BarraTitulo = new System.Windows.Forms.Panel();
             this.Panel_BarraDesplazamieto = new System.Windows.Forms.Panel();
-            this.CheckBox_ModoOscuro = new System.Windows.Forms.CheckBox();
-            this.CheckBox_CamionOnOff = new System.Windows.Forms.CheckBox();
             this.Label_TitleApp = new System.Windows.Forms.Label();
-            this.Button_Menu = new System.Windows.Forms.Button();
-            this.Button_Minimizar = new System.Windows.Forms.Button();
-            this.Button_Cerrar = new System.Windows.Forms.Button();
             this.Panel_ContenedorPrincipal = new System.Windows.Forms.Panel();
             this.Panel_CamionAuxilio = new System.Windows.Forms.Panel();
-            this.PictureBox_CamionAuxilio = new System.Windows.Forms.PictureBox();
             this.Panel_EstadosCamionAuxilio = new System.Windows.Forms.Panel();
+            this.Panel_Control = new System.Windows.Forms.Panel();
+            this.Label_Humedad = new System.Windows.Forms.Label();
+            this.Label_Temperatura = new System.Windows.Forms.Label();
+            this.TableLayoutPanel_CondicionAmbiente = new System.Windows.Forms.TableLayoutPanel();
+            this.PictureBox_CamionAuxilio = new System.Windows.Forms.PictureBox();
             this.Label_DeteccionFlama = new System.Windows.Forms.Label();
             this.Label_DeteccionObstaculos = new System.Windows.Forms.Label();
             this.Label_DeteccionHumo = new System.Windows.Forms.Label();
-            this.Panel_Control = new System.Windows.Forms.Panel();
             this.CheckBox_LucesTraseras = new System.Windows.Forms.CheckBox();
             this.CheckBox_LucesDelanteras = new System.Windows.Forms.CheckBox();
             this.Button_Izquierda = new System.Windows.Forms.Button();
@@ -61,19 +56,24 @@ namespace WreckerCar
             this.Button_Detener = new System.Windows.Forms.Button();
             this.Button_Retroceder = new System.Windows.Forms.Button();
             this.Button_Avanzar = new System.Windows.Forms.Button();
-            this.Label_Humedad = new System.Windows.Forms.Label();
-            this.Label_Temperatura = new System.Windows.Forms.Label();
-            this.TableLayoutPanel_CondicionAmbiente = new System.Windows.Forms.TableLayoutPanel();
+            this.CheckBox_ModoOscuro = new System.Windows.Forms.CheckBox();
+            this.CheckBox_CamionOnOff = new System.Windows.Forms.CheckBox();
+            this.Button_Menu = new System.Windows.Forms.Button();
+            this.Button_Minimizar = new System.Windows.Forms.Button();
+            this.Button_Cerrar = new System.Windows.Forms.Button();
+            this.Button_Limpiar = new System.Windows.Forms.Button();
+            this.Button_Copiar = new System.Windows.Forms.Button();
+            this.Button_GuardarComo = new System.Windows.Forms.Button();
             this.Panel_EntradaSerial.SuspendLayout();
             this.Panel_EntradaSerialContenedor.SuspendLayout();
             this.FlowLayoutPanel_OpcionesEntradaSerial.SuspendLayout();
             this.Panel_BarraTitulo.SuspendLayout();
             this.Panel_ContenedorPrincipal.SuspendLayout();
             this.Panel_CamionAuxilio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_CamionAuxilio)).BeginInit();
             this.Panel_EstadosCamionAuxilio.SuspendLayout();
             this.Panel_Control.SuspendLayout();
             this.TableLayoutPanel_CondicionAmbiente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_CamionAuxilio)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel_EntradaSerial
@@ -110,57 +110,6 @@ namespace WreckerCar
             this.FlowLayoutPanel_OpcionesEntradaSerial.Name = "FlowLayoutPanel_OpcionesEntradaSerial";
             this.FlowLayoutPanel_OpcionesEntradaSerial.Size = new System.Drawing.Size(30, 144);
             this.FlowLayoutPanel_OpcionesEntradaSerial.TabIndex = 3;
-            // 
-            // Button_Limpiar
-            // 
-            this.Button_Limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Limpiar.FlatAppearance.BorderSize = 0;
-            this.Button_Limpiar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Limpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Limpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Limpiar.Image = global::WreckerCar.Properties.Resources.limpiar;
-            this.Button_Limpiar.Location = new System.Drawing.Point(0, 0);
-            this.Button_Limpiar.Margin = new System.Windows.Forms.Padding(0);
-            this.Button_Limpiar.Name = "Button_Limpiar";
-            this.Button_Limpiar.Size = new System.Drawing.Size(30, 30);
-            this.Button_Limpiar.TabIndex = 18;
-            this.Button_Limpiar.UseVisualStyleBackColor = false;
-            this.Button_Limpiar.Click += new System.EventHandler(this.Button_Limpiar_Click);
-            // 
-            // Button_Copiar
-            // 
-            this.Button_Copiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Copiar.FlatAppearance.BorderSize = 0;
-            this.Button_Copiar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Copiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Copiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Copiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Copiar.Image = global::WreckerCar.Properties.Resources.copiar;
-            this.Button_Copiar.Location = new System.Drawing.Point(0, 30);
-            this.Button_Copiar.Margin = new System.Windows.Forms.Padding(0);
-            this.Button_Copiar.Name = "Button_Copiar";
-            this.Button_Copiar.Size = new System.Drawing.Size(30, 30);
-            this.Button_Copiar.TabIndex = 20;
-            this.Button_Copiar.UseVisualStyleBackColor = false;
-            this.Button_Copiar.Click += new System.EventHandler(this.Button_Copiar_Click);
-            // 
-            // Button_GuardarComo
-            // 
-            this.Button_GuardarComo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_GuardarComo.FlatAppearance.BorderSize = 0;
-            this.Button_GuardarComo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_GuardarComo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_GuardarComo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_GuardarComo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_GuardarComo.Image = global::WreckerCar.Properties.Resources.guardarComo;
-            this.Button_GuardarComo.Location = new System.Drawing.Point(0, 60);
-            this.Button_GuardarComo.Margin = new System.Windows.Forms.Padding(0);
-            this.Button_GuardarComo.Name = "Button_GuardarComo";
-            this.Button_GuardarComo.Size = new System.Drawing.Size(30, 30);
-            this.Button_GuardarComo.TabIndex = 19;
-            this.Button_GuardarComo.UseVisualStyleBackColor = false;
-            this.Button_GuardarComo.Click += new System.EventHandler(this.Button_GuardarComo_Click);
             // 
             // RichTextBox_EntradaSerial
             // 
@@ -218,47 +167,6 @@ namespace WreckerCar
             this.Panel_BarraDesplazamieto.TabIndex = 17;
             this.Panel_BarraDesplazamieto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_BarraDesplazamieto_MouseDown);
             // 
-            // CheckBox_ModoOscuro
-            // 
-            this.CheckBox_ModoOscuro.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CheckBox_ModoOscuro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CheckBox_ModoOscuro.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CheckBox_ModoOscuro.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CheckBox_ModoOscuro.FlatAppearance.BorderSize = 0;
-            this.CheckBox_ModoOscuro.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CheckBox_ModoOscuro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CheckBox_ModoOscuro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CheckBox_ModoOscuro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CheckBox_ModoOscuro.Image = global::WreckerCar.Properties.Resources.modoOscuro;
-            this.CheckBox_ModoOscuro.Location = new System.Drawing.Point(883, 0);
-            this.CheckBox_ModoOscuro.Name = "CheckBox_ModoOscuro";
-            this.CheckBox_ModoOscuro.Size = new System.Drawing.Size(40, 30);
-            this.CheckBox_ModoOscuro.TabIndex = 16;
-            this.CheckBox_ModoOscuro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CheckBox_ModoOscuro.UseVisualStyleBackColor = false;
-            this.CheckBox_ModoOscuro.CheckedChanged += new System.EventHandler(this.CheckBox_ModoOscuro_CheckedChanged);
-            // 
-            // CheckBox_CamionOnOff
-            // 
-            this.CheckBox_CamionOnOff.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CheckBox_CamionOnOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CheckBox_CamionOnOff.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CheckBox_CamionOnOff.FlatAppearance.BorderSize = 0;
-            this.CheckBox_CamionOnOff.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CheckBox_CamionOnOff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CheckBox_CamionOnOff.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CheckBox_CamionOnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CheckBox_CamionOnOff.Image = global::WreckerCar.Properties.Resources.enceder;
-            this.CheckBox_CamionOnOff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CheckBox_CamionOnOff.Location = new System.Drawing.Point(923, 0);
-            this.CheckBox_CamionOnOff.Name = "CheckBox_CamionOnOff";
-            this.CheckBox_CamionOnOff.Size = new System.Drawing.Size(97, 30);
-            this.CheckBox_CamionOnOff.TabIndex = 15;
-            this.CheckBox_CamionOnOff.Text = "Encender";
-            this.CheckBox_CamionOnOff.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CheckBox_CamionOnOff.UseVisualStyleBackColor = false;
-            this.CheckBox_CamionOnOff.CheckedChanged += new System.EventHandler(this.CheckBox_CamionOnOff_CheckedChanged);
-            // 
             // Label_TitleApp
             // 
             this.Label_TitleApp.BackColor = System.Drawing.Color.Transparent;
@@ -272,56 +180,6 @@ namespace WreckerCar
             this.Label_TitleApp.TabIndex = 14;
             this.Label_TitleApp.Text = "Comand Control";
             this.Label_TitleApp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // Button_Menu
-            // 
-            this.Button_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Menu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button_Menu.BackgroundImage")));
-            this.Button_Menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Button_Menu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Button_Menu.FlatAppearance.BorderSize = 0;
-            this.Button_Menu.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Menu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Menu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Menu.Location = new System.Drawing.Point(0, 0);
-            this.Button_Menu.Name = "Button_Menu";
-            this.Button_Menu.Size = new System.Drawing.Size(30, 30);
-            this.Button_Menu.TabIndex = 13;
-            this.Button_Menu.UseVisualStyleBackColor = false;
-            // 
-            // Button_Minimizar
-            // 
-            this.Button_Minimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Minimizar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Button_Minimizar.FlatAppearance.BorderSize = 0;
-            this.Button_Minimizar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Minimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Minimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Minimizar.Image = global::WreckerCar.Properties.Resources.minimizar;
-            this.Button_Minimizar.Location = new System.Drawing.Point(1020, 0);
-            this.Button_Minimizar.Name = "Button_Minimizar";
-            this.Button_Minimizar.Size = new System.Drawing.Size(40, 30);
-            this.Button_Minimizar.TabIndex = 12;
-            this.Button_Minimizar.UseVisualStyleBackColor = false;
-            this.Button_Minimizar.Click += new System.EventHandler(this.Button_Minimizar_Click);
-            // 
-            // Button_Cerrar
-            // 
-            this.Button_Cerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Cerrar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Button_Cerrar.FlatAppearance.BorderSize = 0;
-            this.Button_Cerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Cerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_Cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Cerrar.Image = global::WreckerCar.Properties.Resources.cerrar;
-            this.Button_Cerrar.Location = new System.Drawing.Point(1060, 0);
-            this.Button_Cerrar.Name = "Button_Cerrar";
-            this.Button_Cerrar.Size = new System.Drawing.Size(40, 30);
-            this.Button_Cerrar.TabIndex = 11;
-            this.Button_Cerrar.UseVisualStyleBackColor = false;
-            this.Button_Cerrar.Click += new System.EventHandler(this.Button_Cerrar_Click);
             // 
             // Panel_ContenedorPrincipal
             // 
@@ -345,17 +203,6 @@ namespace WreckerCar
             this.Panel_CamionAuxilio.Size = new System.Drawing.Size(612, 396);
             this.Panel_CamionAuxilio.TabIndex = 5;
             // 
-            // PictureBox_CamionAuxilio
-            // 
-            this.PictureBox_CamionAuxilio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PictureBox_CamionAuxilio.Image = global::WreckerCar.Properties.Resources.carroAuxilio_AA_LA;
-            this.PictureBox_CamionAuxilio.Location = new System.Drawing.Point(0, 35);
-            this.PictureBox_CamionAuxilio.Name = "PictureBox_CamionAuxilio";
-            this.PictureBox_CamionAuxilio.Size = new System.Drawing.Size(612, 326);
-            this.PictureBox_CamionAuxilio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.PictureBox_CamionAuxilio.TabIndex = 1;
-            this.PictureBox_CamionAuxilio.TabStop = false;
-            // 
             // Panel_EstadosCamionAuxilio
             // 
             this.Panel_EstadosCamionAuxilio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
@@ -367,6 +214,81 @@ namespace WreckerCar
             this.Panel_EstadosCamionAuxilio.Name = "Panel_EstadosCamionAuxilio";
             this.Panel_EstadosCamionAuxilio.Size = new System.Drawing.Size(612, 35);
             this.Panel_EstadosCamionAuxilio.TabIndex = 0;
+            // 
+            // Panel_Control
+            // 
+            this.Panel_Control.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Panel_Control.BackColor = System.Drawing.Color.Transparent;
+            this.Panel_Control.Controls.Add(this.CheckBox_LucesTraseras);
+            this.Panel_Control.Controls.Add(this.CheckBox_LucesDelanteras);
+            this.Panel_Control.Controls.Add(this.Button_Izquierda);
+            this.Panel_Control.Controls.Add(this.Button_Derecha);
+            this.Panel_Control.Controls.Add(this.Button_Detener);
+            this.Panel_Control.Controls.Add(this.Button_Retroceder);
+            this.Panel_Control.Controls.Add(this.Button_Avanzar);
+            this.Panel_Control.Location = new System.Drawing.Point(12, 18);
+            this.Panel_Control.MinimumSize = new System.Drawing.Size(400, 274);
+            this.Panel_Control.Name = "Panel_Control";
+            this.Panel_Control.Size = new System.Drawing.Size(462, 360);
+            this.Panel_Control.TabIndex = 4;
+            // 
+            // Label_Humedad
+            // 
+            this.Label_Humedad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label_Humedad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Label_Humedad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Label_Humedad.Location = new System.Drawing.Point(306, 0);
+            this.Label_Humedad.Margin = new System.Windows.Forms.Padding(0);
+            this.Label_Humedad.Name = "Label_Humedad";
+            this.Label_Humedad.Size = new System.Drawing.Size(306, 35);
+            this.Label_Humedad.TabIndex = 2;
+            this.Label_Humedad.Text = "0 g/m³";
+            this.Label_Humedad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // Label_Temperatura
+            // 
+            this.Label_Temperatura.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label_Temperatura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Label_Temperatura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Label_Temperatura.Location = new System.Drawing.Point(0, 0);
+            this.Label_Temperatura.Margin = new System.Windows.Forms.Padding(0);
+            this.Label_Temperatura.Name = "Label_Temperatura";
+            this.Label_Temperatura.Padding = new System.Windows.Forms.Padding(25, 0, 25, 0);
+            this.Label_Temperatura.Size = new System.Drawing.Size(306, 35);
+            this.Label_Temperatura.TabIndex = 0;
+            this.Label_Temperatura.Text = "0°";
+            this.Label_Temperatura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TableLayoutPanel_CondicionAmbiente
+            // 
+            this.TableLayoutPanel_CondicionAmbiente.ColumnCount = 2;
+            this.TableLayoutPanel_CondicionAmbiente.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TableLayoutPanel_CondicionAmbiente.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TableLayoutPanel_CondicionAmbiente.Controls.Add(this.Label_Humedad, 1, 0);
+            this.TableLayoutPanel_CondicionAmbiente.Controls.Add(this.Label_Temperatura, 0, 0);
+            this.TableLayoutPanel_CondicionAmbiente.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TableLayoutPanel_CondicionAmbiente.Location = new System.Drawing.Point(0, 361);
+            this.TableLayoutPanel_CondicionAmbiente.Name = "TableLayoutPanel_CondicionAmbiente";
+            this.TableLayoutPanel_CondicionAmbiente.RowCount = 1;
+            this.TableLayoutPanel_CondicionAmbiente.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TableLayoutPanel_CondicionAmbiente.Size = new System.Drawing.Size(612, 35);
+            this.TableLayoutPanel_CondicionAmbiente.TabIndex = 6;
+            // 
+            // PictureBox_CamionAuxilio
+            // 
+            this.PictureBox_CamionAuxilio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PictureBox_CamionAuxilio.Image = global::WreckerCar.Properties.Resources.carroAuxilio_AA_LA;
+            this.PictureBox_CamionAuxilio.Location = new System.Drawing.Point(0, 35);
+            this.PictureBox_CamionAuxilio.Name = "PictureBox_CamionAuxilio";
+            this.PictureBox_CamionAuxilio.Size = new System.Drawing.Size(612, 326);
+            this.PictureBox_CamionAuxilio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.PictureBox_CamionAuxilio.TabIndex = 1;
+            this.PictureBox_CamionAuxilio.TabStop = false;
             // 
             // Label_DeteccionFlama
             // 
@@ -409,24 +331,6 @@ namespace WreckerCar
             this.Label_DeteccionHumo.TabIndex = 0;
             this.Label_DeteccionHumo.Text = "Detección de Humo";
             this.Label_DeteccionHumo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // Panel_Control
-            // 
-            this.Panel_Control.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.Panel_Control.BackColor = System.Drawing.Color.Transparent;
-            this.Panel_Control.Controls.Add(this.CheckBox_LucesTraseras);
-            this.Panel_Control.Controls.Add(this.CheckBox_LucesDelanteras);
-            this.Panel_Control.Controls.Add(this.Button_Izquierda);
-            this.Panel_Control.Controls.Add(this.Button_Derecha);
-            this.Panel_Control.Controls.Add(this.Button_Detener);
-            this.Panel_Control.Controls.Add(this.Button_Retroceder);
-            this.Panel_Control.Controls.Add(this.Button_Avanzar);
-            this.Panel_Control.Location = new System.Drawing.Point(12, 18);
-            this.Panel_Control.MinimumSize = new System.Drawing.Size(400, 274);
-            this.Panel_Control.Name = "Panel_Control";
-            this.Panel_Control.Size = new System.Drawing.Size(462, 360);
-            this.Panel_Control.TabIndex = 4;
             // 
             // CheckBox_LucesTraseras
             // 
@@ -560,50 +464,147 @@ namespace WreckerCar
             this.Button_Avanzar.UseVisualStyleBackColor = false;
             this.Button_Avanzar.Click += new System.EventHandler(this.Button_Avanzar_Click);
             // 
-            // Label_Humedad
+            // CheckBox_ModoOscuro
             // 
-            this.Label_Humedad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label_Humedad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Label_Humedad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Label_Humedad.Location = new System.Drawing.Point(309, 0);
-            this.Label_Humedad.Name = "Label_Humedad";
-            this.Label_Humedad.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.Label_Humedad.Size = new System.Drawing.Size(300, 35);
-            this.Label_Humedad.TabIndex = 2;
-            this.Label_Humedad.Text = "0 g/m³";
-            this.Label_Humedad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CheckBox_ModoOscuro.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CheckBox_ModoOscuro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CheckBox_ModoOscuro.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CheckBox_ModoOscuro.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CheckBox_ModoOscuro.FlatAppearance.BorderSize = 0;
+            this.CheckBox_ModoOscuro.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CheckBox_ModoOscuro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CheckBox_ModoOscuro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CheckBox_ModoOscuro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CheckBox_ModoOscuro.Image = global::WreckerCar.Properties.Resources.modoOscuro;
+            this.CheckBox_ModoOscuro.Location = new System.Drawing.Point(883, 0);
+            this.CheckBox_ModoOscuro.Name = "CheckBox_ModoOscuro";
+            this.CheckBox_ModoOscuro.Size = new System.Drawing.Size(40, 30);
+            this.CheckBox_ModoOscuro.TabIndex = 16;
+            this.CheckBox_ModoOscuro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CheckBox_ModoOscuro.UseVisualStyleBackColor = false;
+            this.CheckBox_ModoOscuro.CheckedChanged += new System.EventHandler(this.CheckBox_ModoOscuro_CheckedChanged);
             // 
-            // Label_Temperatura
+            // CheckBox_CamionOnOff
             // 
-            this.Label_Temperatura.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label_Temperatura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Label_Temperatura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Label_Temperatura.Location = new System.Drawing.Point(3, 0);
-            this.Label_Temperatura.Name = "Label_Temperatura";
-            this.Label_Temperatura.Padding = new System.Windows.Forms.Padding(25, 0, 25, 0);
-            this.Label_Temperatura.Size = new System.Drawing.Size(300, 35);
-            this.Label_Temperatura.TabIndex = 0;
-            this.Label_Temperatura.Text = "0°";
-            this.Label_Temperatura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CheckBox_CamionOnOff.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CheckBox_CamionOnOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CheckBox_CamionOnOff.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CheckBox_CamionOnOff.FlatAppearance.BorderSize = 0;
+            this.CheckBox_CamionOnOff.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CheckBox_CamionOnOff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CheckBox_CamionOnOff.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CheckBox_CamionOnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CheckBox_CamionOnOff.Image = global::WreckerCar.Properties.Resources.enceder;
+            this.CheckBox_CamionOnOff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CheckBox_CamionOnOff.Location = new System.Drawing.Point(923, 0);
+            this.CheckBox_CamionOnOff.Name = "CheckBox_CamionOnOff";
+            this.CheckBox_CamionOnOff.Size = new System.Drawing.Size(97, 30);
+            this.CheckBox_CamionOnOff.TabIndex = 15;
+            this.CheckBox_CamionOnOff.Text = "Encender";
+            this.CheckBox_CamionOnOff.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CheckBox_CamionOnOff.UseVisualStyleBackColor = false;
+            this.CheckBox_CamionOnOff.CheckedChanged += new System.EventHandler(this.CheckBox_CamionOnOff_CheckedChanged);
             // 
-            // TableLayoutPanel_CondicionAmbiente
+            // Button_Menu
             // 
-            this.TableLayoutPanel_CondicionAmbiente.ColumnCount = 2;
-            this.TableLayoutPanel_CondicionAmbiente.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableLayoutPanel_CondicionAmbiente.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableLayoutPanel_CondicionAmbiente.Controls.Add(this.Label_Humedad, 1, 0);
-            this.TableLayoutPanel_CondicionAmbiente.Controls.Add(this.Label_Temperatura, 0, 0);
-            this.TableLayoutPanel_CondicionAmbiente.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TableLayoutPanel_CondicionAmbiente.Location = new System.Drawing.Point(0, 361);
-            this.TableLayoutPanel_CondicionAmbiente.Name = "TableLayoutPanel_CondicionAmbiente";
-            this.TableLayoutPanel_CondicionAmbiente.RowCount = 1;
-            this.TableLayoutPanel_CondicionAmbiente.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableLayoutPanel_CondicionAmbiente.Size = new System.Drawing.Size(612, 35);
-            this.TableLayoutPanel_CondicionAmbiente.TabIndex = 6;
+            this.Button_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Menu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button_Menu.BackgroundImage")));
+            this.Button_Menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Button_Menu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Button_Menu.FlatAppearance.BorderSize = 0;
+            this.Button_Menu.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Menu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Menu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Menu.Location = new System.Drawing.Point(0, 0);
+            this.Button_Menu.Name = "Button_Menu";
+            this.Button_Menu.Size = new System.Drawing.Size(30, 30);
+            this.Button_Menu.TabIndex = 13;
+            this.Button_Menu.UseVisualStyleBackColor = false;
+            // 
+            // Button_Minimizar
+            // 
+            this.Button_Minimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Minimizar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Button_Minimizar.FlatAppearance.BorderSize = 0;
+            this.Button_Minimizar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Minimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Minimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Minimizar.Image = global::WreckerCar.Properties.Resources.minimizar;
+            this.Button_Minimizar.Location = new System.Drawing.Point(1020, 0);
+            this.Button_Minimizar.Name = "Button_Minimizar";
+            this.Button_Minimizar.Size = new System.Drawing.Size(40, 30);
+            this.Button_Minimizar.TabIndex = 12;
+            this.Button_Minimizar.UseVisualStyleBackColor = false;
+            this.Button_Minimizar.Click += new System.EventHandler(this.Button_Minimizar_Click);
+            // 
+            // Button_Cerrar
+            // 
+            this.Button_Cerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Cerrar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Button_Cerrar.FlatAppearance.BorderSize = 0;
+            this.Button_Cerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Cerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Cerrar.Image = global::WreckerCar.Properties.Resources.cerrar;
+            this.Button_Cerrar.Location = new System.Drawing.Point(1060, 0);
+            this.Button_Cerrar.Name = "Button_Cerrar";
+            this.Button_Cerrar.Size = new System.Drawing.Size(40, 30);
+            this.Button_Cerrar.TabIndex = 11;
+            this.Button_Cerrar.UseVisualStyleBackColor = false;
+            this.Button_Cerrar.Click += new System.EventHandler(this.Button_Cerrar_Click);
+            // 
+            // Button_Limpiar
+            // 
+            this.Button_Limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Limpiar.FlatAppearance.BorderSize = 0;
+            this.Button_Limpiar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Limpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Limpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Limpiar.Image = global::WreckerCar.Properties.Resources.limpiar;
+            this.Button_Limpiar.Location = new System.Drawing.Point(0, 0);
+            this.Button_Limpiar.Margin = new System.Windows.Forms.Padding(0);
+            this.Button_Limpiar.Name = "Button_Limpiar";
+            this.Button_Limpiar.Size = new System.Drawing.Size(30, 30);
+            this.Button_Limpiar.TabIndex = 18;
+            this.Button_Limpiar.UseVisualStyleBackColor = false;
+            this.Button_Limpiar.Click += new System.EventHandler(this.Button_Limpiar_Click);
+            // 
+            // Button_Copiar
+            // 
+            this.Button_Copiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Copiar.FlatAppearance.BorderSize = 0;
+            this.Button_Copiar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Copiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Copiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_Copiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Copiar.Image = global::WreckerCar.Properties.Resources.copiar;
+            this.Button_Copiar.Location = new System.Drawing.Point(0, 30);
+            this.Button_Copiar.Margin = new System.Windows.Forms.Padding(0);
+            this.Button_Copiar.Name = "Button_Copiar";
+            this.Button_Copiar.Size = new System.Drawing.Size(30, 30);
+            this.Button_Copiar.TabIndex = 20;
+            this.Button_Copiar.UseVisualStyleBackColor = false;
+            this.Button_Copiar.Click += new System.EventHandler(this.Button_Copiar_Click);
+            // 
+            // Button_GuardarComo
+            // 
+            this.Button_GuardarComo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_GuardarComo.FlatAppearance.BorderSize = 0;
+            this.Button_GuardarComo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_GuardarComo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_GuardarComo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_GuardarComo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_GuardarComo.Image = global::WreckerCar.Properties.Resources.guardarComo;
+            this.Button_GuardarComo.Location = new System.Drawing.Point(0, 60);
+            this.Button_GuardarComo.Margin = new System.Windows.Forms.Padding(0);
+            this.Button_GuardarComo.Name = "Button_GuardarComo";
+            this.Button_GuardarComo.Size = new System.Drawing.Size(30, 30);
+            this.Button_GuardarComo.TabIndex = 19;
+            this.Button_GuardarComo.UseVisualStyleBackColor = false;
+            this.Button_GuardarComo.Click += new System.EventHandler(this.Button_GuardarComo_Click);
             // 
             // CommandControl
             // 
@@ -631,10 +632,10 @@ namespace WreckerCar
             this.Panel_BarraTitulo.ResumeLayout(false);
             this.Panel_ContenedorPrincipal.ResumeLayout(false);
             this.Panel_CamionAuxilio.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_CamionAuxilio)).EndInit();
             this.Panel_EstadosCamionAuxilio.ResumeLayout(false);
             this.Panel_Control.ResumeLayout(false);
             this.TableLayoutPanel_CondicionAmbiente.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_CamionAuxilio)).EndInit();
             this.ResumeLayout(false);
 
         }

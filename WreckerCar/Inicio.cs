@@ -19,7 +19,7 @@ namespace WreckerCar
 
         private void btnConectar_Click(object sender, EventArgs e)
         {
-            Control ventanaControl = new Control();
+            CommandControl ventanaControl = new CommandControl();
             ventanaControl.Show();
             this.Hide();
         }

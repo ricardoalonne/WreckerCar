@@ -121,6 +121,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="sounds\alarm.wav" />
     <None Include="sounds\carInReverse.wav" />
     <None Include="images\carroAuxilio_AE_LTE_O.png" />
     <None Include="icons\abajo.png" />
