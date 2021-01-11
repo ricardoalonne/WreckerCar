@@ -61,6 +61,9 @@ namespace WreckerCar
             this.Button_Detener = new System.Windows.Forms.Button();
             this.Button_Retroceder = new System.Windows.Forms.Button();
             this.Button_Avanzar = new System.Windows.Forms.Button();
+            this.Label_Humedad = new System.Windows.Forms.Label();
+            this.Label_Temperatura = new System.Windows.Forms.Label();
+            this.TableLayoutPanel_CondicionAmbiente = new System.Windows.Forms.TableLayoutPanel();
             this.Panel_EntradaSerial.SuspendLayout();
             this.Panel_EntradaSerialContenedor.SuspendLayout();
             this.FlowLayoutPanel_OpcionesEntradaSerial.SuspendLayout();
@@ -70,6 +73,7 @@ namespace WreckerCar
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_CamionAuxilio)).BeginInit();
             this.Panel_EstadosCamionAuxilio.SuspendLayout();
             this.Panel_Control.SuspendLayout();
+            this.TableLayoutPanel_CondicionAmbiente.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_EntradaSerial
@@ -333,11 +337,12 @@ namespace WreckerCar
             // 
             this.Panel_CamionAuxilio.BackColor = System.Drawing.Color.Transparent;
             this.Panel_CamionAuxilio.Controls.Add(this.PictureBox_CamionAuxilio);
+            this.Panel_CamionAuxilio.Controls.Add(this.TableLayoutPanel_CondicionAmbiente);
             this.Panel_CamionAuxilio.Controls.Add(this.Panel_EstadosCamionAuxilio);
             this.Panel_CamionAuxilio.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Panel_CamionAuxilio.Location = new System.Drawing.Point(491, 0);
+            this.Panel_CamionAuxilio.Location = new System.Drawing.Point(488, 0);
             this.Panel_CamionAuxilio.Name = "Panel_CamionAuxilio";
-            this.Panel_CamionAuxilio.Size = new System.Drawing.Size(609, 396);
+            this.Panel_CamionAuxilio.Size = new System.Drawing.Size(612, 396);
             this.Panel_CamionAuxilio.TabIndex = 5;
             // 
             // PictureBox_CamionAuxilio
@@ -346,7 +351,7 @@ namespace WreckerCar
             this.PictureBox_CamionAuxilio.Image = global::WreckerCar.Properties.Resources.carroAuxilio_AA_LA;
             this.PictureBox_CamionAuxilio.Location = new System.Drawing.Point(0, 35);
             this.PictureBox_CamionAuxilio.Name = "PictureBox_CamionAuxilio";
-            this.PictureBox_CamionAuxilio.Size = new System.Drawing.Size(609, 361);
+            this.PictureBox_CamionAuxilio.Size = new System.Drawing.Size(612, 326);
             this.PictureBox_CamionAuxilio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.PictureBox_CamionAuxilio.TabIndex = 1;
             this.PictureBox_CamionAuxilio.TabStop = false;
@@ -360,7 +365,7 @@ namespace WreckerCar
             this.Panel_EstadosCamionAuxilio.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_EstadosCamionAuxilio.Location = new System.Drawing.Point(0, 0);
             this.Panel_EstadosCamionAuxilio.Name = "Panel_EstadosCamionAuxilio";
-            this.Panel_EstadosCamionAuxilio.Size = new System.Drawing.Size(609, 35);
+            this.Panel_EstadosCamionAuxilio.Size = new System.Drawing.Size(612, 35);
             this.Panel_EstadosCamionAuxilio.TabIndex = 0;
             // 
             // Label_DeteccionFlama
@@ -372,7 +377,7 @@ namespace WreckerCar
             this.Label_DeteccionFlama.Location = new System.Drawing.Point(203, 0);
             this.Label_DeteccionFlama.Name = "Label_DeteccionFlama";
             this.Label_DeteccionFlama.Padding = new System.Windows.Forms.Padding(25, 0, 25, 0);
-            this.Label_DeteccionFlama.Size = new System.Drawing.Size(203, 35);
+            this.Label_DeteccionFlama.Size = new System.Drawing.Size(206, 35);
             this.Label_DeteccionFlama.TabIndex = 1;
             this.Label_DeteccionFlama.Text = "Detección de Flama";
             this.Label_DeteccionFlama.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -383,7 +388,7 @@ namespace WreckerCar
             this.Label_DeteccionObstaculos.Dock = System.Windows.Forms.DockStyle.Right;
             this.Label_DeteccionObstaculos.Image = global::WreckerCar.Properties.Resources.obstaculos;
             this.Label_DeteccionObstaculos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Label_DeteccionObstaculos.Location = new System.Drawing.Point(406, 0);
+            this.Label_DeteccionObstaculos.Location = new System.Drawing.Point(409, 0);
             this.Label_DeteccionObstaculos.Name = "Label_DeteccionObstaculos";
             this.Label_DeteccionObstaculos.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.Label_DeteccionObstaculos.Size = new System.Drawing.Size(203, 35);
@@ -555,6 +560,51 @@ namespace WreckerCar
             this.Button_Avanzar.UseVisualStyleBackColor = false;
             this.Button_Avanzar.Click += new System.EventHandler(this.Button_Avanzar_Click);
             // 
+            // Label_Humedad
+            // 
+            this.Label_Humedad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label_Humedad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Label_Humedad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Label_Humedad.Location = new System.Drawing.Point(309, 0);
+            this.Label_Humedad.Name = "Label_Humedad";
+            this.Label_Humedad.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.Label_Humedad.Size = new System.Drawing.Size(300, 35);
+            this.Label_Humedad.TabIndex = 2;
+            this.Label_Humedad.Text = "0 g/m³";
+            this.Label_Humedad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // Label_Temperatura
+            // 
+            this.Label_Temperatura.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label_Temperatura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Label_Temperatura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Label_Temperatura.Location = new System.Drawing.Point(3, 0);
+            this.Label_Temperatura.Name = "Label_Temperatura";
+            this.Label_Temperatura.Padding = new System.Windows.Forms.Padding(25, 0, 25, 0);
+            this.Label_Temperatura.Size = new System.Drawing.Size(300, 35);
+            this.Label_Temperatura.TabIndex = 0;
+            this.Label_Temperatura.Text = "0°";
+            this.Label_Temperatura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TableLayoutPanel_CondicionAmbiente
+            // 
+            this.TableLayoutPanel_CondicionAmbiente.ColumnCount = 2;
+            this.TableLayoutPanel_CondicionAmbiente.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TableLayoutPanel_CondicionAmbiente.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TableLayoutPanel_CondicionAmbiente.Controls.Add(this.Label_Humedad, 1, 0);
+            this.TableLayoutPanel_CondicionAmbiente.Controls.Add(this.Label_Temperatura, 0, 0);
+            this.TableLayoutPanel_CondicionAmbiente.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TableLayoutPanel_CondicionAmbiente.Location = new System.Drawing.Point(0, 361);
+            this.TableLayoutPanel_CondicionAmbiente.Name = "TableLayoutPanel_CondicionAmbiente";
+            this.TableLayoutPanel_CondicionAmbiente.RowCount = 1;
+            this.TableLayoutPanel_CondicionAmbiente.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TableLayoutPanel_CondicionAmbiente.Size = new System.Drawing.Size(612, 35);
+            this.TableLayoutPanel_CondicionAmbiente.TabIndex = 6;
+            // 
             // CommandControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -584,6 +634,7 @@ namespace WreckerCar
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_CamionAuxilio)).EndInit();
             this.Panel_EstadosCamionAuxilio.ResumeLayout(false);
             this.Panel_Control.ResumeLayout(false);
+            this.TableLayoutPanel_CondicionAmbiente.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -621,5 +672,8 @@ namespace WreckerCar
         private System.Windows.Forms.Button Button_GuardarComo;
         private System.Windows.Forms.Button Button_Copiar;
         private System.Windows.Forms.Panel Panel_EntradaSerialContenedor;
+        private System.Windows.Forms.TableLayoutPanel TableLayoutPanel_CondicionAmbiente;
+        private System.Windows.Forms.Label Label_Humedad;
+        private System.Windows.Forms.Label Label_Temperatura;
     }
 }
